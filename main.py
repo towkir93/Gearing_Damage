@@ -11,8 +11,8 @@ num_situations = data.shape[1]
 # Plot speed and torque for each campaign and situation
 for campaign in range(num_campaigns):
     for situation in range(num_situations):
-        speed_data = data[campaign, situation, 2]  # Actual speed (index 4)
-        torque_data = data[campaign, situation, 3]  # Actual torque (index 5)
+        speed_data = data[campaign, situation, 2]  # Actual speed
+        torque_data = data[campaign, situation, 3]  # Actual torque
 
         # Plot speed over time
         plt.figure(figsize=(10, 6))
